@@ -3,19 +3,19 @@ Traversy React JS crash course, todo list
 
 install:
 --------
-node.js,
-react dev tools (chrome),
-create-react-app
-    • npm > global
-    • npx > uses create-react-app, but doesn't install on system
-
-    npx create-react-app my-app
-    cd my-app
-    npm start
-    http://localhost:3000
-
+node.js, <br />
+react dev tools (chrome), <br />
+create-react-app <br />
+    • npm > global <br />
+    • npx > uses create-react-app, but doesn't install on system <br />
+<br />
+    npx create-react-app my-app <br />
+    cd my-app <br />
+    npm start <br />
+    http://localhost:3000 <br />
+<br />
     deploy > npm run build
-
+<br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
