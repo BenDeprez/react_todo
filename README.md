@@ -1,5 +1,6 @@
 # react_todo
-Traversy React JS crash course, todo list
+Traversy React JS crash course, todo list <br />
+https://www.youtube.com/watch?v=sBws8MSXN7A <br />
 
 install:
 --------
