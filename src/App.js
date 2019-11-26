@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import Header from './components/layout/Header'
 import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
+import uuid from 'uuid'
 import './App.css';
 
 // todo array
@@ -7,17 +10,17 @@ class App extends Component {
   state = {
     todos: [
     {
-      id: 1,
+      id: uuid.v4(),
       title: 'Take out trash',
       completed: false
     },
     {
-      id: 2,
+      id: uuid.v4(),
       title: 'Dinner',
       completed: false
     },
     {
-      id: 3,
+      id: uuid.v4(),
       title: 'meeting with Bob',
       completed: false
     },
@@ -36,6 +39,18 @@ class App extends Component {
     })
   }
 
+  // Add Todo
+  addTodo = (title) => {
+    const newTodo = {
+      id: uuid.v4(),
+      title: title,
+      completed: false
+    }
+    this.setState({
+      todos: [...this.state.todos, newTodo]
+    })
+  }
+
   // delete todo
   delTodo = (id) => {
     this.setState({
@@ -46,11 +61,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <div className="container">
+        <Header />
+        <AddTodo addTodo={this.addTodo}/>
         <Todos 
           todos={this.state.todos} 
           markComplete={this.markComplete}
           delTodo={this.delTodo}
         />
+        </div>
+    
       </div>
     );
   }
