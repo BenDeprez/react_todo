@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Todos from './components/Todos';
 import './App.css';
 
+// todo array
 class App extends Component {
   state = {
     todos: [
